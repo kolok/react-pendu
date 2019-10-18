@@ -1,22 +1,95 @@
-.App {
-  text-align: center;
+body {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  margin:0;
 }
 
-.App-logo {
-  height: 40vmin;
+#root {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Content {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  max-width: 500px;
+  background: #eee;
 }
 
-.App-link {
-  color: #09d3ac;
+.Content__Button {
+  margin: 20px 0;
+  padding: 5px 25px;
+}
+
+.Content__Counter {
+  margin: 20px 0;
+  padding: 5px 25px;
+}
+
+.Content__Layer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width:100%;
+  height:100%;
+  background:lightgray;
+}
+
+.Content__Layer button{
+  background-color:lightgray;
+  border-style: none;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+.Content__GameOver {
+  color: black;
+}
+
+.Content__Winner {
+  color: green;
+}
+
+.Content__Link {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+ul {
+  list-style:none;
+  padding:0;
+  margin:0;
+}
+
+li {
+  display: inline-block;
+}
+
+.Content__Letter {
+  margin: 10px;
+  padding: 10px;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+}
+
+.inactive {
+  background: silver; 
+}
+
+.active {
+  background: lightblue; 
+}
+
+.Content__Sentence {
+  letter-spacing: 3px;
 }
