@@ -35,7 +35,7 @@ class App extends Component {
   }
 
   // Set a sentence before mount the App component
-  componentWillMount() {
+  componentDidMount() {
     this.chooseASentence()
   }
 
